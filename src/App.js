@@ -1,21 +1,24 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Home from "./Home";
+import HomePage from "./HomePage"
 import { Route } from "react-router-dom"
+import ListPage from "./ListPage"
+import NewItem from "./NewItem"
 
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        
         <p>
   
     <>
-    <Route exact path="/" component={Home}/>
-    
-      <h1>African Marketplace</h1>
+    <Route exact path="/" component={HomePage} />
+    <Route exact path="/data"  component={ListPage}/>
+    <Route exact path ="/new-item" component={NewItem}/>
+      
       
     </>
 
@@ -27,7 +30,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+         
         </a>
       </header>
     </div>
