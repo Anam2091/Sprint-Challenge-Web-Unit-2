@@ -35,6 +35,7 @@ const NewItem = props => {
         event.preventDefault();
         console.log(New);
         const res = axios.put('api/products', New);
+        
       };
 
 
